@@ -1,0 +1,43 @@
+.header {
+  padding: 27px 0;
+  border: 1px solid #D8E3FE;
+  &__navigation {
+    gap: 73px;
+    &-logo {
+      $logo-dimensions: 26px;
+      a {
+        display: inline-block;
+        width: $logo-dimensions;
+        height: $logo-dimensions;
+        background-color: $secondary-accent-color;
+        border-radius: 50%;
+      }
+    }
+    nav {
+      ul {
+        gap: 42px;
+      }
+    }
+  }
+
+  &__social {
+    gap: 44px;
+    &-icons {
+      ul {
+        gap: 38px;
+      }
+    }
+
+    &-cta {
+      a {
+        background-color: #D2E1FF;
+        color: #3A79FF;
+        display: inline-block;
+        border-radius: 2px;
+        padding: 13px 21px;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 13px;
+      }
+    }
+  }
+}

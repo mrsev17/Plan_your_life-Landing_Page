@@ -100,8 +100,35 @@ body {
   max-width: 920px;
 }
 
+a {
+  color: #8D96BD;
+  text-decoration: none;
+}
+
+.list-unstyled {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .row {
   display: flex;
+}
+
+.col {
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
 }
 
 /* Connect fonts */
@@ -153,6 +180,38 @@ body {
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+.header {
+  padding: 27px 0;
+  border: 1px solid #D8E3FE;
+}
+.header__navigation {
+  gap: 73px;
+}
+.header__navigation-logo a {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-color: #5E81FE;
+  border-radius: 50%;
+}
+.header__navigation nav ul {
+  gap: 42px;
+}
+.header__social {
+  gap: 44px;
+}
+.header__social-icons ul {
+  gap: 38px;
+}
+.header__social-cta a {
+  background-color: #D2E1FF;
+  color: #3A79FF;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 13px 21px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 13px;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
