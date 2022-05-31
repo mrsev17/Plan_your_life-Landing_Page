@@ -28,6 +28,13 @@ body {
 a {
   color: $accent-color;
   text-decoration: none;
+
+  /*
+  &:active {
+    color: pink !important;
+    transition: .4s;
+  }
+  */
 }
 
 .list-unstyled {

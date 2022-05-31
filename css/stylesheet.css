@@ -103,6 +103,12 @@ body {
 a {
   color: #8D96BD;
   text-decoration: none;
+  /*
+  &:active {
+    color: pink !important;
+    transition: .4s;
+  }
+  */
 }
 
 .list-unstyled {
@@ -184,6 +190,8 @@ a {
 .header {
   padding: 27px 0;
   border: 1px solid #D8E3FE;
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
 }
 .header__navigation {
   gap: 73px;
@@ -195,8 +203,22 @@ a {
   background-color: #5E81FE;
   border-radius: 50%;
 }
+.header__navigation-logo a:hover {
+  background-color: mediumorchid;
+  transform: scale(1.5);
+  transition: 0.5s;
+}
 .header__navigation nav ul {
   gap: 42px;
+}
+.header__navigation nav ul a.active, .header__navigation nav ul a:hover:not(.active) {
+  font-weight: 700;
+  color: #5E81FE;
+}
+.header__navigation nav ul a:hover:not(.active) {
+  font-weight: 400;
+  transition: 0.4s;
+  transform: scale(1.5);
 }
 .header__social {
   gap: 44px;
@@ -212,6 +234,7 @@ a {
   padding: 13px 21px;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 13px;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
