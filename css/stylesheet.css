@@ -78,6 +78,32 @@ select {
     transition-duration: 0.01ms !important;
   }
 }
+/* Common styles */
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.container-md,
+.container-lg {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-lg {
+  max-width: 1235px;
+}
+
+.container-md {
+  max-width: 920px;
+}
+
+.row {
+  display: flex;
+}
+
 /* Connect fonts */
 @font-face {
   font-family: "Open Sans";
@@ -118,6 +144,13 @@ select {
   font-family: "Roboto";
   src: url("../../fonts/Roboto-Medium.woff2") format("woff2"), url("../../fonts/Roboto-Medium.woff") format("woff"), url("../../fonts/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: local("Quicksand Regular"), local("Quicksand-Regular"), url("../../fonts/Quicksand-Regular.woff2") format("woff2"), url("../../fonts/Quicksand-Regular.woff") format("woff"), url("../../fonts/Quicksand-Regular.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
