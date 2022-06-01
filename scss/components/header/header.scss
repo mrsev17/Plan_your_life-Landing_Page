@@ -18,7 +18,7 @@
         &:hover {
           background-color: mediumorchid;
           transform: scale(1.5);
-          transition: .5s;
+          transition: $accent-transition;
         }
       }
     }
@@ -34,7 +34,7 @@
           }
           &:hover:not(.active) {
             font-weight: 400;
-            transition: .4s;
+            transition: $accent-transition;
             transform: scale(1.5);
           }
         }
