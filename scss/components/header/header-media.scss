@@ -10,6 +10,10 @@ $media-breakpoint-tablet: 875px;
     [for="media-menu-btn"] {
       display: none;
     }
+
+    .hidden-desktop {
+      display: none;
+    }
   }
 
   /*
@@ -34,56 +38,73 @@ $media-breakpoint-tablet: 875px;
       min-height: $header_height;
       max-height: $header_height;
     }
-
-    & [for="media-menu-btn"] {
-      background: #D2E1FF;
-      border-radius: 2px;
-      padding: 13px 21px;
-      color: #3A79FF;
-      font-size: 13px;
-      font-weight: 700;
-      text-transform: uppercase;
+    &__social-cta {
+      display: none;
+    }
+    .row {
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
 
-    &__navigation {
-      gap: 30px;
-      flex-direction: row-reverse;
-      justify-content: flex-end;
 
-      nav {
-        width: 100%;
-        display: none;
-        position: absolute;
-        top: $header_height;
-        left: 0;
-        background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
-
-        ul {
-          flex-direction: column;
-          gap: 0;
+        &__social {
+          /*
+          min-width: 328px;
+           */
+          width: initial;
         }
 
-        a {
-          display: block;
-          text-align: center;
-          padding: 10px 0;
-          font-size: $font-tablet-size;
+      & [for="media-menu-btn"] {
+        background: #D2E1FF;
+        border-radius: 2px;
+        padding: 13px 21px;
+        color: #3A79FF;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
 
-          &:hover {
-            background: linear-gradient(229.32deg, #6888FF 12.77%, #6888FF 81.53%);
-            transition: $accent-transition;
-            color: white !important;
+      &__navigation {
+        width: 18%;
+        min-width: 140px;
+        gap: 30px;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+
+        nav {
+          width: 100%;
+          display: none;
+          position: absolute;
+          top: $header_height;
+          left: 0;
+          background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+
+          ul {
+            flex-direction: column;
+            gap: 0;
+          }
+
+          a {
+            display: block;
+            text-align: center;
+            padding: 10px 0;
+            font-size: $font-tablet-size;
+
+            &:hover {
+              background: linear-gradient(229.32deg, #6888FF 12.77%, #6888FF 81.53%);
+              transition: $accent-transition;
+              color: white !important;
+            }
           }
         }
       }
-    }
 
-    &__media-menu-btn {
+      &__media-menu-btn {
         &:checked {
           & + nav {
             display: initial;
           }
         }
+      }
     }
   }
-}

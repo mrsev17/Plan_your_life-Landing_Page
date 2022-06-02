@@ -1,0 +1,47 @@
+.banner {
+  height: 100vh;
+  max-height: 570px;
+  width: 100vw;
+  background: url("../../../assets/images/banner_background.png") no-repeat 100% 100% /* Center */;
+  background-size: cover;
+  resize: none;
+  .container-md {
+    padding-top: 92px;
+    padding-bottom: 200px;
+    .banner__text p {
+      text-align: center;
+      font-size: 10px;
+      font-family: $main-font;
+      font-weight: 500;
+      color: #3D4F9F;
+    }
+    .banner__title h1 {
+      text-align: center;
+      font-size: 48px;
+      font-family: $font-quicksand;
+      font-weight: 300;
+      color: #3D4F9F;
+      span {
+        font-weight: 500;
+      }
+    }
+    .banner__description p {
+      text-align: center;
+      font-size: $font-md;
+      font-family: $main-font;
+      font-weight: 400;
+      color: $accent-color;
+      width: 100%;
+      max-width: 502px;
+      margin: 18px auto 0;
+    }
+    .banner__play {
+      text-align: center;
+      a {
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}

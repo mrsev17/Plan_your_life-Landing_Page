@@ -1,3 +1,7 @@
+html {
+  height: 100%;
+}
+
 *,
 *::before,
 *::after {
@@ -78,6 +82,7 @@ select {
     transition-duration: 0.01ms !important;
   }
 }
+/* Variables for media breakpoints */
 /* Common styles */
 body {
   font-family: "Roboto", sans-serif;
@@ -137,6 +142,7 @@ a {
   align-items: center;
 }
 
+/* Variables for media breakpoints */
 /* Connect fonts */
 @font-face {
   font-family: "Open Sans";
@@ -260,12 +266,28 @@ a {
   .header [for=media-menu-btn] {
     display: none;
   }
+  .header .hidden-desktop {
+    display: none;
+  }
 }
 @media (max-width: 875px) {
   .header {
     position: relative;
     min-height: 83px;
     max-height: 83px;
+  }
+  .header__social-cta {
+    display: none;
+  }
+  .header .row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .header__social {
+    /*
+    min-width: 328px;
+     */
+    width: initial;
   }
   .header [for=media-menu-btn] {
     background: #D2E1FF;
@@ -277,6 +299,8 @@ a {
     text-transform: uppercase;
   }
   .header__navigation {
+    width: 18%;
+    min-width: 140px;
     gap: 30px;
     flex-direction: row-reverse;
     justify-content: flex-end;
@@ -307,6 +331,52 @@ a {
   .header__media-menu-btn:checked + nav {
     display: initial;
   }
+}
+
+.banner {
+  height: 100vh;
+  max-height: 570px;
+  width: 100vw;
+  background: url("../../../assets/images/banner_background.png") no-repeat 100% 100%;
+  background-size: cover;
+  resize: none;
+}
+.banner .container-md {
+  padding-top: 92px;
+  padding-bottom: 200px;
+}
+.banner .container-md .banner__text p {
+  text-align: center;
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #3D4F9F;
+}
+.banner .container-md .banner__title h1 {
+  text-align: center;
+  font-size: 48px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  color: #3D4F9F;
+}
+.banner .container-md .banner__title h1 span {
+  font-weight: 500;
+}
+.banner .container-md .banner__description p {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #8D96BD;
+  width: 100%;
+  max-width: 502px;
+  margin: 18px auto 0;
+}
+.banner .container-md .banner__play {
+  text-align: center;
+}
+.banner .container-md .banner__play a:hover {
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
