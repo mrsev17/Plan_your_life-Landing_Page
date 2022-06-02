@@ -1,0 +1,9 @@
+@media (max-width: $media-breakpoint-tablet) {
+  .companies {
+    .container-md {
+      flex-direction: column;
+      align-items: center;
+      gap: 37px;
+    }
+  }
+}
