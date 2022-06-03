@@ -3,6 +3,8 @@
   border: 1px solid #D8E3FE;
   font-family: $font-quicksand;
   font-size: $font-sm;
+  max-height: $header-height;
+  min-height: $header-height;
 
   &__navigation {
     gap: 73px;
