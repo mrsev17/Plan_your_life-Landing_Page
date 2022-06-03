@@ -1,0 +1,55 @@
+.manage {
+  background-color: #F5F8FF;
+  &__wrapper {
+    padding: 210px 0 216px 0;
+  }
+  &__subtitles {
+    p {
+      font-weight: 500;
+      font-size: $font-xs;
+      line-height: 12px;
+      text-transform: uppercase;
+      color: #3D4F9F;
+    }
+  }
+  &__title {
+    margin-top: 27px;
+    h2 {
+      font-family: $font-quicksand;
+      font-weight: 300;
+      font-size: 36px;
+      line-height: 45px;
+      color: #3D4F9F;
+    }
+  }
+
+  &__description {
+    margin-top: 27px;
+    p {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 29px;
+      color: $accent-color;
+      max-width: 413px;
+    }
+  }
+
+  &__controls {
+    margin-top: 60px;
+    a {
+      text-align: center;
+      padding: 13px 27px 13px 27px;
+      border: 1px solid #D1D1E4;
+      font-size: 13px;
+      &:hover,
+      &-active {
+        background-color: $secondary-accent-color;
+        color: #ffffff;
+        transition: .5s;
+      }
+    }
+    a:last-child {
+      border-left: 0 solid transparent;
+    }
+  }
+}

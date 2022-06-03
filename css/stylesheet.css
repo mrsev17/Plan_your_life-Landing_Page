@@ -485,5 +485,55 @@ p {
     gap: 37px;
   }
 }
+.manage {
+  background-color: #F5F8FF;
+}
+.manage__wrapper {
+  padding: 210px 0 216px 0;
+}
+.manage__subtitles p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #3D4F9F;
+}
+.manage__title {
+  margin-top: 27px;
+}
+.manage__title h2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 45px;
+  color: #3D4F9F;
+}
+.manage__description {
+  margin-top: 27px;
+}
+.manage__description p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 29px;
+  color: #8D96BD;
+  max-width: 413px;
+}
+.manage__controls {
+  margin-top: 60px;
+}
+.manage__controls a {
+  text-align: center;
+  padding: 13px 27px 13px 27px;
+  border: 1px solid #D1D1E4;
+  font-size: 13px;
+}
+.manage__controls a:hover, .manage__controls a-active {
+  background-color: #5E81FE;
+  color: #ffffff;
+  transition: 0.5s;
+}
+.manage__controls a:last-child {
+  border-left: 0 solid transparent;
+}
 
 /*# sourceMappingURL=stylesheet.css.map */
