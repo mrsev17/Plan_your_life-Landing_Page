@@ -52,4 +52,13 @@
       border-left: 0 solid transparent;
     }
   }
+   &__wrapper-illustration {
+     position: relative;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 653px;
+      }
+  }
 }
