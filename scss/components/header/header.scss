@@ -1,10 +1,19 @@
 .header {
-  padding: 27px 0;
   border: 1px solid #D8E3FE;
   font-family: $font-quicksand;
   font-size: $font-sm;
   max-height: $header-height;
   min-height: $header-height;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 99;
+  &__wrapper {
+    padding: 18px 0;
+  }
 
   &__navigation {
     gap: 73px;

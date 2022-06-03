@@ -6,7 +6,7 @@
     display: none;
   }
 
-  @media (min-width: $media-breakpoint-tablet) {
+  @media (min-width: $tablet-screen-size) {
     [for="media-menu-btn"] {
       display: none;
     }
@@ -31,10 +31,17 @@
   }
   */
 
-  @media (max-width: $media-breakpoint-tablet) {
+  @media (max-width: $tablet-screen-size) {
 
-    & {
+    nav {
+      z-index: 100;
+      box-shadow: 0 13px 14px -11px rgb(0, 0, 0, 62%);
+    }
+
+    &__wrapper {
       position: relative;
+    }
+    & {
       min-height: $header_height;
       max-height: $header_height;
     }
