@@ -1,0 +1,64 @@
+.started {
+  padding: 91px 0;
+  background: url("../../../assets/images/started_clouds.png");
+  background-color: #6888FF;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  &__wrapper-content {
+    text-align: center;
+  }
+    &__subtitles {
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 12px;
+      text-transform: uppercase;
+      color: white;
+    }
+
+    &__title {
+      font-family: $font-quicksand;
+      font-weight: 300;
+      font-size: 48px;
+      line-height: 60px;
+      color: #FFFFFF;
+      margin-top: 16px;
+      span {
+        font-weight: 500;
+      }
+    }
+
+    &__description {
+      font-size: 15px;
+      line-height: 29px;
+      text-align: center;
+      color: #FFFFFF;
+      width: 75%;
+      margin: 28px auto 0;
+    }
+    &__btn-left {
+      margin-top: 28px;
+      font-family: $font-quicksand;
+      font-size: 13px;
+      color: #565F82;
+      padding: 10px;
+      border: 1px solid $accent-color;
+      &:hover {
+        background-color: white;
+        color: #565F82;
+      }
+    }
+    &__btn-right {
+      margin-top: 28px;
+      font-family: $font-quicksand;
+      font-size: 13px;
+      color: #C7D3FF;
+      padding: 10px;
+      border: 1px solid $accent-color;
+      &:hover {
+        background-color: white;
+        color: #565F82;
+      }
+    }
+
+}

@@ -1,0 +1,7 @@
+@media (max-width: 470px) {
+  .started {
+    &__controls {
+      flex-direction: column;
+    }
+  }
+}
