@@ -1,0 +1,38 @@
+@media (max-width: 760px) {
+  .productivity {
+    background-image: linear-gradient(180deg,  #5E80FF 50%, #D2E1FF 50%);
+    &__wrapper {
+      flex-direction: column;
+      &:before {
+        display: none;
+      }
+    }
+    &__left-part {
+      margin: 67px 0 66px;
+      width: 100%;
+      padding: 0;
+    }
+    &__right-part{
+      width: 100%;
+    }
+    &__left-icon {
+      margin: 0 auto;
+    }
+    &__right-icon {
+      margin: 0 auto;
+    }
+    &__number-left {
+      margin: 0;
+      text-align: center;
+    }
+    &__number-right {
+      text-align: center;
+      max-width: 100%;
+      margin: 0;
+    }
+    &__description-left,
+    &__description-right {
+      text-align: center;
+    }
+  }
+}

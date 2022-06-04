@@ -740,6 +740,132 @@ p {
     justify-content: center;
   }
 }
+.productivity {
+  background-image: linear-gradient(90deg, #5E80FF 50%, #D2E1FF 50%);
+}
+.productivity__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /*
+  &:after {
+    content: "";
+    display: block;
+    background-color: #D2E1FF;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+  }
+   */
+}
+.productivity__wrapper:before {
+  content: "";
+  display: block;
+  background-color: #5E80FF;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 100%;
+}
+.productivity__left-part {
+  background-color: #5E80FF;
+  padding: 67px 0 66px;
+  width: 50%;
+}
+.productivity__left-icon {
+  display: flex;
+  align-content: end;
+  margin-left: 70%;
+}
+.productivity__number-left {
+  color: white;
+  margin-left: 65%;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 83px;
+  margin-top: 10px;
+}
+.productivity__description-left {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: white;
+  max-width: 70%;
+  margin-left: 16%;
+  text-align: right;
+}
+.productivity__right-part {
+  background-color: #D2E1FF;
+  padding: 67px 0 66px;
+  width: 50%;
+}
+.productivity__right-icon {
+  display: flex;
+  align-items: start;
+  margin-left: 15%;
+}
+.productivity__number-right {
+  color: #5E80FF;
+  margin-left: 14%;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 83px;
+  margin-top: 10px;
+}
+.productivity__description-right {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #5E80FF;
+  max-width: 70%;
+  margin-left: 14%;
+  text-align: left;
+}
+
+@media (max-width: 760px) {
+  .productivity {
+    background-image: linear-gradient(180deg, #5E80FF 50%, #D2E1FF 50%);
+  }
+  .productivity__wrapper {
+    flex-direction: column;
+  }
+  .productivity__wrapper:before {
+    display: none;
+  }
+  .productivity__left-part {
+    margin: 67px 0 66px;
+    width: 100%;
+    padding: 0;
+  }
+  .productivity__right-part {
+    width: 100%;
+  }
+  .productivity__left-icon {
+    margin: 0 auto;
+  }
+  .productivity__right-icon {
+    margin: 0 auto;
+  }
+  .productivity__number-left {
+    margin: 0;
+    text-align: center;
+  }
+  .productivity__number-right {
+    text-align: center;
+    max-width: 100%;
+    margin: 0;
+  }
+  .productivity__description-left, .productivity__description-right {
+    text-align: center;
+  }
+}
 .started {
   padding: 91px 0;
   background: url("../../../assets/images/started_clouds.png");
