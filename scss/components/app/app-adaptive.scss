@@ -1,0 +1,27 @@
+@media (max-width: 780px) {
+  .app {
+    &__main-content {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .app {
+    &__option-control {
+      display: none;
+    }
+    &__control-panel {
+      flex-direction: column;
+    }
+    &__read-more,
+    &__get-started {
+      padding: 14px 0;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}

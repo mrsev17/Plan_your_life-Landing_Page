@@ -719,6 +719,27 @@ p {
   width: 15px;
 }
 
+@media (max-width: 780px) {
+  .app__main-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+}
+@media (max-width: 420px) {
+  .app__option-control {
+    display: none;
+  }
+  .app__control-panel {
+    flex-direction: column;
+  }
+  .app__read-more, .app__get-started {
+    padding: 14px 0;
+    width: 100%;
+    justify-content: center;
+  }
+}
 .started {
   padding: 91px 0;
   background: url("../../../assets/images/started_clouds.png");
