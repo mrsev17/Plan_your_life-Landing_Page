@@ -1241,7 +1241,7 @@ p {
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
-  padding: 21px 120px 21px 23px;
+  padding: 21px 126px 21px 23px;
   color: #7A85AD;
 }
 .newsletter__email:focus {
@@ -1259,7 +1259,6 @@ p {
   outline: none;
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
-  line-height: 16px;
   border-radius: 5px;
   border: 2px solid #4D6CE1;
   color: #FFFFFF;
@@ -1270,6 +1269,32 @@ p {
   transition: 0.4s;
 }
 
+@media (max-width: 910px) {
+  .newsletter__wrapper {
+    flex-direction: column;
+  }
+  .newsletter__description, .newsletter__subtitles {
+    text-align: center;
+    margin: 20px auto;
+  }
+  .newsletter__right-side {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .newsletter__save-me {
+    padding: 15px 46px 15px 46px;
+    max-width: 318px;
+    text-align: center;
+    margin: 0;
+  }
+}
+@media (max-width: 910px) {
+  .newsletter__email {
+    padding: 21px 112px 21px 23px;
+  }
+}
 .started {
   padding: 91px 0;
   background: url("../../../assets/images/started_clouds.png");

@@ -1,0 +1,37 @@
+@media (max-width: 910px) {
+  .newsletter {
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__description,
+    &__subtitles {
+      text-align: center;
+      margin: 20px auto;
+    }
+    &__right-side {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+    &__email {
+
+
+    }
+    &__save-me {
+      padding: 15px 46px 15px 46px;
+      max-width: 318px;
+      text-align: center;
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 910px) {
+  .newsletter {
+    &__email {
+      padding: 21px 112px 21px 23px;
+    }
+  }
+}
