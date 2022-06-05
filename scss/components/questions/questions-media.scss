@@ -1,0 +1,9 @@
+@media (max-width: 540px) {
+  .questions {
+    &__wrapper-open-block {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

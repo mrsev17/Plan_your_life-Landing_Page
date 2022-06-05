@@ -1127,7 +1127,7 @@ p {
   }
 }
 .questions .container-md {
-  padding: 175px 0 175px;
+  padding: 175px 30px 175px;
   margin: 0 auto;
 }
 .questions__subtitles {
@@ -1209,6 +1209,13 @@ p {
   transform: scale(1.2);
 }
 
+@media (max-width: 540px) {
+  .questions__wrapper-open-block {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .started {
   padding: 91px 0;
   background: url("../../../assets/images/started_clouds.png");
