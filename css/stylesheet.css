@@ -1028,6 +1028,74 @@ p {
     flex-direction: column;
   }
 }
+.costumers {
+  background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
+}
+.costumers__wrapper {
+  padding: 110px 0 110px;
+}
+.costumers__left-side, .costumers__right-side {
+  width: 50%;
+}
+.costumers__subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #3D4F9F;
+}
+.costumers__title {
+  margin-top: 31px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 45px;
+  color: #3D4F9F;
+}
+.costumers__wrapper-right-side {
+  border: 1px solid #A4ABC8;
+  background-color: white;
+  padding: 40px 70px 54px 70px;
+  box-shadow: 2px 2px 5px black;
+  position: relative;
+}
+.costumers__avatar {
+  position: absolute;
+  top: 80%;
+  right: 45%;
+}
+.costumers__description {
+  margin-top: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 23px;
+  color: #A4ABC8;
+  width: 70%;
+}
+.costumers__right-description {
+  width: 100%;
+  font-size: 14px;
+  color: #676F95;
+}
+.costumers__controls {
+  margin-top: 20%;
+  gap: 12px;
+}
+.costumers__controls-item {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #D1D6E3;
+}
+.costumers__controls-item:hover, .costumers__controls-item-active {
+  background-color: #5283FF;
+  transition: 0.4s;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
 .started {
   padding: 91px 0;
   background: url("../../../assets/images/started_clouds.png");
