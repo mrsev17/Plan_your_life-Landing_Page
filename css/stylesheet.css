@@ -1096,6 +1096,36 @@ p {
   cursor: pointer;
 }
 
+@media (max-width: 930px) {
+  .costumers__wrapper {
+    flex-direction: column;
+  }
+  .costumers__left-side {
+    text-align: center;
+    width: 100%;
+  }
+  .costumers__description {
+    width: 100%;
+  }
+  .costumers__right-side {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+  }
+  .costumers__avatar {
+    right: 47%;
+  }
+}
+@media (max-width: 460px) {
+  .costumers__avatar {
+    right: 44%;
+  }
+}
+@media (max-width: 350px) {
+  .costumers__avatar {
+    right: 41%;
+  }
+}
 .started {
   padding: 91px 0;
   background: url("../../../assets/images/started_clouds.png");

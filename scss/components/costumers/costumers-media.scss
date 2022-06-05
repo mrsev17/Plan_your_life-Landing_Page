@@ -1,0 +1,38 @@
+@media (max-width: 930px) {
+  .costumers {
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__left-side {
+      text-align: center;
+      width: 100%;
+    }
+    &__description {
+      width: 100%;
+    }
+    &__right-side {
+      margin-top: 30px;
+      text-align: center;
+      width: 100%;
+    }
+    &__avatar {
+      right: 47%;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .costumers {
+    &__avatar {
+      right: 44%;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .costumers {
+    &__avatar {
+      right: 41%;
+    }
+  }
+}
