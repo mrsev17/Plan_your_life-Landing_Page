@@ -984,6 +984,50 @@ p {
   cursor: pointer;
 }
 
+@media (max-width: 940px) {
+  .blog__main-content {
+    flex-direction: column;
+  }
+  .blog__left-part-content {
+    width: 100%;
+  }
+  .blog__right-part-content {
+    width: 100%;
+  }
+  .blog__right-title-content {
+    text-align: center;
+  }
+  .blog__right-description-content {
+    text-align: center;
+  }
+  .blog__right-control-content {
+    justify-content: center;
+  }
+}
+@media (max-width: 450px) {
+  .blog__left-part-content {
+    flex-direction: column;
+  }
+  .blog__side-left {
+    margin: 0 auto;
+  }
+  .blog__side-right {
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  .blog__side-right-figure {
+    width: 100%;
+    height: 100%;
+  }
+  .blog__right-control-content {
+    flex-direction: column;
+  }
+}
+@media (max-width: 380px) {
+  .blog__side-right {
+    flex-direction: column;
+  }
+}
 .started {
   padding: 91px 0;
   background: url("../../../assets/images/started_clouds.png");
