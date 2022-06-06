@@ -1,0 +1,18 @@
+@media (max-width: 960px) {
+  .footer {
+    .row {
+      flex-direction: column;
+      align-items: center;
+      &__navigation {
+        justify-content: center;
+        align-items: center;
+      }
+      &__navigation-logo nav {
+        margin: 0 auto;
+      }
+      .footer__social {
+        justify-content: center;
+      }
+    }
+  }
+}

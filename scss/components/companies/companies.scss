@@ -5,4 +5,10 @@
     justify-content: center;
     gap: 76px;
   }
+  figure a svg path {
+    fill: #8D96BD;
+    &:hover {
+      fill: #4D6CE1;
+    }
+  }
 }

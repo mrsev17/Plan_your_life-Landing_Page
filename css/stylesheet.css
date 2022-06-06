@@ -280,6 +280,12 @@ p {
 .header__social-icons ul {
   gap: 38px;
 }
+.header__social-icons li a svg path {
+  fill: #A4ABC8;
+}
+.header__social-icons li a svg path:hover {
+  fill: #4D6CE1;
+}
 .header__social-cta a {
   background-color: #D2E1FF;
   color: #3A79FF;
@@ -481,6 +487,12 @@ p {
   display: flex;
   justify-content: center;
   gap: 76px;
+}
+.companies figure a svg path {
+  fill: #8D96BD;
+}
+.companies figure a svg path:hover {
+  fill: #4D6CE1;
 }
 
 @media (max-width: 875px) {
@@ -725,6 +737,9 @@ p {
     justify-content: center;
     align-items: center;
     gap: 40px;
+  }
+  .app__box {
+    width: 80%;
   }
 }
 @media (max-width: 420px) {
@@ -1430,6 +1445,23 @@ p {
   text-transform: capitalize;
   color: #AEB8D0;
   opacity: 0.7;
+}
+
+@media (max-width: 960px) {
+  .footer .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .row__navigation {
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .row__navigation-logo nav {
+    margin: 0 auto;
+  }
+  .footer .row .footer__social {
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

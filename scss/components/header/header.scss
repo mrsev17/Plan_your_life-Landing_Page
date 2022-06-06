@@ -59,7 +59,14 @@
       ul {
         gap: 38px;
       }
+      li a svg path {
+        fill: #A4ABC8;
+        &:hover {
+          fill: #4D6CE1;
+        }
+      }
     }
+
 
     &-cta {
       a {
