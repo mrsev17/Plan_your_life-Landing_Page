@@ -42,8 +42,10 @@
       position: relative;
     }
     & {
+      /*
       min-height: $header_height;
       max-height: $header_height;
+       */
     }
     &__social-cta {
       display: none;

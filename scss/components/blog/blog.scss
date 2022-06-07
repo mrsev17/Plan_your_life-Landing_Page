@@ -1,13 +1,14 @@
 .blog {
   background-color: #F5F8FF;
-
-  .container-md {
-    padding: 104px 0 104px 0;
+  padding: 104px 0 104px 0;
+  &__main-content {
+    justify-content: space-between;
   }
 
   &__right-part-content {
     width: 50%;
   }
+
 
   &__subtitles {
     text-align: center;
@@ -19,7 +20,6 @@
   }
 
   &__title {
-    margin-top: 20px;
     font-family: $font-quicksand;
     text-align: center;
     font-weight: 300;
@@ -31,10 +31,10 @@
 
   &__main-content {
     background-color: white;
-    margin: 92px 0 92px 0;
+    margin: 80px 0 80px 0;
     padding: 64px 63px;
     border: 1px solid #D2E1FF;
-    gap: 67px;
+    gap: 40px;
   }
 
   &__right-title-content {
@@ -46,14 +46,14 @@
   }
 
   &__right-description-content {
-    margin-top: 30px;
+    margin-top: 26px;
     font-size: 14px;
     line-height: 27px;
     color: #8D96BD;
   }
 
   &__right-control-content {
-    margin-top: 31px;
+    margin-top: 32px;
     gap: 38px;
   }
 
@@ -80,37 +80,48 @@
     width: 50%;
   }
 
-  &__side-left figure {
+  &__side-left figure img{
     width: 100%;
     height: 100%;
-    max-width: 267px;
-    max-height: 267px;
-    background-image: url(../../../assets/icons/blog_search.png), url(../../../assets/images/Rectangle_3.png);
+    max-width: 300px;
+    max-height: 300px;
+    background-image: url(../../../assets/images/Rectangle_3.png), url(../../../assets/icons/blog_search.png);
     background-repeat: no-repeat, no-repeat;
-    background-size: 30% 30%, 100% 100%;
+    background-size: 100% 100%, 30% 30%;
     background-position: center center;
+    border-radius: 8px;
 
   }
 
-  &__side-left figure img {
+  &__side-left {
+    /*
+    width: 80%;
+     */
+  }
+
+  &__side-left figure {
     width: 100%;
     height: 100%;
-    max-width: 267px;
-    max-height: 267px;
+    max-width: 300px;
+    max-height: 300px;
 
     &:hover {
-      opacity: 0;
+      opacity: 0.5;
       transition: .6s;
     }
   }
 
   &__side-right {
+    /*
+    width: 20%;
+     */
     flex-direction: column;
-    justify-content: space-between;
-    gap: 12px;
+    justify-content: start;
+    gap: 21px;
   }
 
   &__side-right figure img {
+    border-radius: 8px;
     height: 100%;
     max-width: 126px;
     max-height: 126px;

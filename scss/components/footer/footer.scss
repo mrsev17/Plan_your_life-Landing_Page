@@ -1,84 +1,32 @@
 .footer {
-  font-family: $font-quicksand;
-  font-size: $font-sm;
-  max-height: $header-height;
-  min-height: $header-height;
-  width: 100%;
-  background-color: #ffffff;
-  z-index: 99;
-  margin-top: 107px;
-  &__wrapper {
-    padding: 18px 0;
+  border-top: 1px solid #E8ECF4;
+  padding: 100px 0 100px 0;
+  &__logo-icons {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
   }
-
-  &__navigation {
-    gap: 73px;
-    &-logo {
-      $logo-dimensions: 26px;
-      a {
-        display: inline-block;
-        width: $logo-dimensions;
-        height: $logo-dimensions;
-        background-color: $secondary-accent-color;
-        border-radius: 50%;
-
-        &:hover {
-          background-color: mediumorchid;
-          transform: scale(1.3);
-          transition: $accent-transition;
-        }
-      }
+  &__networks {
+    .list-unstyled {
+      gap: 25px;
     }
-    nav {
-      ul {
-        gap: 42px;
-
-        a {
-          &.active,
-          &:hover:not(.active) {
-            font-weight: 700;
-            color: $secondary-accent-color;
-          }
-          &:hover:not(.active) {
-            font-weight: 400;
-            transition: $accent-transition;
-            transform: scale(1.2);
-          }
-        }
+    .list-unstyled a svg path {
+      &:hover {
+        fill: #4D6CE1;
       }
     }
   }
+  &__copyrights p {
+    opacity: 0.7;
 
-  &__social {
-    gap: 44px;
-    &-icons {
-      ul {
-        gap: 38px;
-      }
-    }
-
-    &-cta {
-      a {
-        background-color: #D2E1FF;
-        color: #3A79FF;
-        display: inline-block;
-        border-radius: 2px;
-        padding: 13px 21px;
-        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-        font-size: 13px;
-        font-weight: 700;
-      }
-    }
-  }
-  &__copyright {
-    margin: 42px 0 93px 100px;
     font-family: $font-quicksand;
     font-weight: 500;
-    font-size: 12px;
+    font-size: $font-xs;
     line-height: 15px;
+    display: flex;
     text-transform: capitalize;
+
     color: #AEB8D0;
-    opacity: 0.7;
   }
 }
-
