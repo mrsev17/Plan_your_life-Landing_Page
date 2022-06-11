@@ -117,3 +117,16 @@
       }
     }
   }
+
+@media (max-width: 366px) {
+
+  .header {
+    &__navigation {
+      margin: 0 auto;
+    }
+    &__social {
+      margin: 18px auto 0;
+    }
+  }
+
+}

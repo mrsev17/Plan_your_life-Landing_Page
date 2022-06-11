@@ -397,6 +397,14 @@ p {
   }
 }
 
+@media (max-width: 366px) {
+  .header__navigation {
+    margin: 0 auto;
+  }
+  .header__social {
+    margin: 18px auto 0;
+  }
+}
 .banner {
   background: #F4F7FF;
   height: calc(100vh - 82px);
