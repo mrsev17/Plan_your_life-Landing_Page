@@ -180,6 +180,11 @@ p {
 }
 
 /* Variables for media breakpoints */
+@media (max-width: 366px) {
+  main {
+    margin-top: 0;
+  }
+}
 /* Connect fonts */
 @font-face {
   font-family: "Open Sans";
@@ -492,6 +497,11 @@ p {
   cursor: pointer;
 }
 
+@media (max-width: 366px) {
+  .banner__wrapper {
+    padding-top: 14vh;
+  }
+}
 .companies {
   padding: 60px 0 60px 0;
 }
@@ -1157,6 +1167,9 @@ p {
 @media (max-width: 350px) {
   .costumers__avatar {
     right: 41%;
+  }
+  .costumers__wrapper-right-side {
+    padding: 40px 20px 54px 20px;
   }
 }
 .questions {
